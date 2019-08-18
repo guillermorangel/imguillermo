@@ -8,8 +8,19 @@
     <%= feed_tag :atom, "#{blog.options.prefix.to_s}/feed.xml", title: "Atom Feed" %>
   </head>
   <body>
-    <div id="main" role="main">
+    <div id="wrapper" class="main" role="main">
+      <section class="intro">
+        <header>
+          <h1>Paradigm Shift</h1>
+          <p>A free responsive site template designed by <a href="https://twitter.com/ajlkn">@ajlkn</a> / <a href="https://html5up.net">HTML5 UP</a></p>
+        </header>
+        <div class="content">
+          <span class="image fill" data-position="center"><img src="images/pic01.jpg" alt="" /></span>
+        </div>
+      </section>
+
       <%= yield %>
+
     </div>
   </body>
 </html>
